@@ -6,12 +6,14 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_rifle</sound>
+    <sound>sound\snd_small_rifle</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cursor</sprite>
     <sprites name="tmp">
       <sprite>sprites\spr_base</sprite>
       <sprite>sprites\spr_zombie</sprite>
+      <sprite>sprites\tmp_bullet</sprite>
     </sprites>
     <sprite>sprites\spr_base1</sprite>
     <sprite>sprites\spr_zombie_walk</sprite>
@@ -30,6 +32,12 @@
       <object>objects\enemy_spawner_left</object>
     </objects>
     <object>objects\player</object>
+    <objects name="defenders">
+      <object>objects\sniper</object>
+    </objects>
+    <objects name="projectiles">
+      <object>objects\sniper_bullet</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\game</room>

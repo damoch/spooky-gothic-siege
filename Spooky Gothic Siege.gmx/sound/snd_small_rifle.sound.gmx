@@ -2,10 +2,10 @@
 <sound>
   <kind>0</kind>
   <extension>.wav</extension>
-  <origname>sound\audio\snd_rifle.wav</origname>
+  <origname>sound\audio\snd_small_rifle.wav</origname>
   <effects>0</effects>
   <volume>
-    <volume>0.12</volume>
+    <volume>0.1</volume>
   </volume>
   <pan>0</pan>
   <bitRates>
@@ -21,7 +21,7 @@
     <bitDepth>16</bitDepth>
   </bitDepths>
   <preload>-1</preload>
-  <data>snd_rifle.wav</data>
+  <data>snd_small_rifle.wav</data>
   <compressed>0</compressed>
   <streamed>0</streamed>
   <uncompressOnLoad>0</uncompressOnLoad>
