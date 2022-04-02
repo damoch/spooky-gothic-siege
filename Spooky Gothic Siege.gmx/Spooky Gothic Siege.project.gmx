@@ -17,6 +17,7 @@
     </sprites>
     <sprite>sprites\spr_base1</sprite>
     <sprite>sprites\spr_zombie_walk</sprite>
+    <sprite>sprites\spr_sniper</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -37,6 +38,15 @@
     </objects>
     <objects name="projectiles">
       <object>objects\sniper_bullet</object>
+    </objects>
+    <object>objects\controller</object>
+    <objects name="gui">
+      <objects name="buttons">
+        <object>objects\btn_buy_sniper</object>
+      </objects>
+      <objects name="buying_tiles">
+        <object>objects\sniper_buying_tile</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
