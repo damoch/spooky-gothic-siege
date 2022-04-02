@@ -5,9 +5,24 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_base</sprite>
+    <sprite>sprites\spr_zombie</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\base</object>
+    <objects name="enemies">
+      <object>objects\zombie</object>
+    </objects>
+    <objects name="spawners">
+      <object>objects\zombie_spawner_right</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\game</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
