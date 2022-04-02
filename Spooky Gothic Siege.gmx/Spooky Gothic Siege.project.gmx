@@ -8,11 +8,17 @@
     <sound>sound\snd_rifle</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_base</sprite>
-    <sprite>sprites\spr_zombie</sprite>
     <sprite>sprites\spr_cursor</sprite>
+    <sprites name="tmp">
+      <sprite>sprites\spr_base</sprite>
+      <sprite>sprites\spr_zombie</sprite>
+    </sprites>
+    <sprite>sprites\spr_base1</sprite>
+    <sprite>sprites\spr_zombie_walk</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\base</object>
