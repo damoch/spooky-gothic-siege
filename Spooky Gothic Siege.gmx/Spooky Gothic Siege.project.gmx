@@ -18,7 +18,10 @@
     </sprites>
     <sprite>sprites\spr_base1</sprite>
     <sprite>sprites\spr_zombie_walk</sprite>
+    <sprite>sprites\spr_necromancer_walk</sprite>
     <sprite>sprites\spr_sniper</sprite>
+    <sprite>sprites\spr_mg_nest</sprite>
+    <sprite>sprites\spr_zombie_death</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -28,6 +31,7 @@
     <object>objects\base</object>
     <objects name="enemies">
       <object>objects\zombie</object>
+      <object>objects\necromancer</object>
     </objects>
     <objects name="spawners">
       <object>objects\enemy_spawner_right</object>
@@ -52,6 +56,9 @@
         <object>objects\sniper_buying_tile</object>
         <object>objects\mg_buying_tile</object>
       </objects>
+    </objects>
+    <objects name="gfx">
+      <object>objects\gfx_zombie_death</object>
     </objects>
   </objects>
   <rooms name="rooms">

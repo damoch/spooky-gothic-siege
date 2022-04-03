@@ -30,6 +30,7 @@ z_health = 25;
 image_speed = 0.25;
 z_target = instance_nearest(x,y,base);
 z_bounty_credits = 25;
+death_animation = gfx_zombie_death;
 
 if(z_target.x &lt; x){
     image_xscale=-1;
@@ -58,6 +59,7 @@ if(z_target.x &lt; x){
             <kind>1</kind>
             <string>if(z_health &lt;=0)
 {
+    instance_create(x,y,death_animation);
     controller.total_kills += 1;
     controller.credits += z_bounty_credits;
     instance_destroy()
