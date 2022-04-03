@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\snd_rifle</sound>
     <sound>sound\snd_small_rifle</sound>
+    <sound>sound\snd_mg</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cursor</sprite>
@@ -35,17 +36,21 @@
     <object>objects\player</object>
     <objects name="defenders">
       <object>objects\sniper</object>
+      <object>objects\machine_gun_nest</object>
     </objects>
     <objects name="projectiles">
       <object>objects\sniper_bullet</object>
+      <object>objects\mg_bullet</object>
     </objects>
     <object>objects\controller</object>
     <objects name="gui">
       <objects name="buttons">
         <object>objects\btn_buy_sniper</object>
+        <object>objects\brn_buy_mg</object>
       </objects>
       <objects name="buying_tiles">
         <object>objects\sniper_buying_tile</object>
+        <object>objects\mg_buying_tile</object>
       </objects>
     </objects>
   </objects>
