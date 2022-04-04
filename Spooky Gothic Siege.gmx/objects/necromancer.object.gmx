@@ -25,17 +25,42 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>z_speed = 1.25;
-z_health = 200;
+            <string>z_speed = 0.75;
+z_health = 100;
 image_speed = 0.25;
 z_target = instance_nearest(x,y,base);
 z_bounty_credits = 200;
 death_animation = gfx_zombie_death;
-z_spawning_distance = 256;
+z_spawning_distance = 128;
+z_can_spawn = true;
+z_spawn_delay = 1 * room_speed;
 
 if(z_target.x &lt; x){
     image_xscale=-1;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>z_can_spawn = true;
 </string>
           </argument>
         </arguments>
@@ -92,8 +117,10 @@ if(z_target.x &lt; x){
 z = instance_nearest(x,y,gfx_zombie_death);
 
 
-if(z &amp;&amp; !z.respawning &amp;&amp; distance_to_object(z) &lt; z_spawning_distance){
+if(z_can_spawn &amp;&amp; z &amp;&amp; !z.respawning &amp;&amp; distance_to_object(z) &lt; z_spawning_distance){
+    z_can_spawn = false;
     z.alarm[0] = 1;
+    alarm[1] = z_spawn_delay;
 }
 </string>
           </argument>

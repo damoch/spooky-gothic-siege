@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>cost = 500;
+cost_increase = 1.2;
 produces = mg_buying_tile;
 image_xscale /=2;
 image_yscale /=2;
@@ -57,6 +58,7 @@ name = "MACHINE GUN NEST";
             <string>if(controller.credits &gt;= cost){
     controller.credits -= cost;
     instance_create(x,y,produces)
+    cost *= cost_increase;
 }
 </string>
           </argument>
@@ -108,6 +110,7 @@ draw_text(x,y+15,"Shorcut: F2")
             <string>if(controller.credits &gt;= cost){
     controller.credits -= cost;
     instance_create(x,y,produces)
+    cost *= cost_increase;
 }
 </string>
           </argument>

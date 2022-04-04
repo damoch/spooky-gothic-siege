@@ -74,9 +74,9 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>respawning = true;
-image_speed = -1;
+image_speed = -0.5;
 
-alarm[1] = 7;
+alarm[1] = 14;
 </string>
           </argument>
         </arguments>

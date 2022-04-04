@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>cost = 100;
+cost_increase = 1.2;
 produces = sniper_buying_tile;
 image_xscale /=2;
 image_yscale /=2;
@@ -56,7 +57,8 @@ name = "SNIPER";
             <kind>1</kind>
             <string>if(controller.credits &gt;= cost){
     controller.credits -= cost;
-    instance_create(x,y,produces)
+    instance_create(x,y,produces);
+    cost *= cost_increase;
 }
 </string>
           </argument>
@@ -107,7 +109,8 @@ draw_text(x,y+15,"Shorcut: F1")
             <kind>1</kind>
             <string>if(controller.credits &gt;= cost){
     controller.credits -= cost;
-    instance_create(x,y,produces)
+    instance_create(x,y,produces);
+    cost *= cost_increase;
 }
 </string>
           </argument>

@@ -34,6 +34,7 @@ z_max_land_height = room_height;
 
 z_tier_zero_enemy_list[0] = zombie;
 z_enemy_list[0] = z_tier_zero_enemy_list;
+z_necromancers_to_spawn = 1;
 
 alarm[0] = z_spawning_time;
 z_total_spawned = 0;
@@ -70,9 +71,11 @@ if(z_spawning_time &lt; 1){
 }
 
 if(z_total_spawned % 30==0 ){
-    instance_create(x, random_range(z_min_land_height, z_max_land_height), necromancer)
+    for(var i = 0; i &lt; z_necromancers_to_spawn; i++){
+        instance_create(x, random_range(z_min_land_height, z_max_land_height), necromancer);
+    }
+    z_necromancers_to_spawn++;
 }
-
 alarm[0] = z_spawning_time;
 
 

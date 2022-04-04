@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>z_speed = 1.25;
+z_pinned_down_speed = z_speed * 0.5;
+z_current_speed = z_speed;
+z_pinned_down_time = 3 * room_speed;
 z_health = 25;
 image_speed = 0.25;
 z_target = instance_nearest(x,y,base);
@@ -35,6 +38,54 @@ death_animation = gfx_zombie_death;
 if(z_target.x &lt; x){
     image_xscale=-1;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+z_current_speed = z_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>z_current_speed = z_pinned_down_speed;
+alarm[2] = z_pinned_down_time;
 </string>
           </argument>
         </arguments>
@@ -59,7 +110,8 @@ if(z_target.x &lt; x){
             <kind>1</kind>
             <string>if(z_health &lt;=0)
 {
-    instance_create(x,y,death_animation);
+    inst = instance_create(x,y,death_animation);
+    inst.image_xscale = image_xscale;
     controller.total_kills += 1;
     controller.credits += z_bounty_credits;
     instance_destroy()
@@ -86,7 +138,7 @@ if(z_target.x &lt; x){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move_towards_point(z_target.x, z_target.y, z_speed);
+            <string>move_towards_point(z_target.x, z_target.y, z_current_speed);
 
 </string>
           </argument>

@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>p_speed = 30;
-p_hitpoints = 2;
+p_hitpoints = 0.5;
 angle = 0;
 p_target_x = -1;
 p_target_y = -1;
@@ -135,6 +135,7 @@ instance_destroy();
             <string>p_target_id = -1;
 other.z_health-=p_hitpoints;
 other.alarm[0] = 1;
+other.alarm[1] = 1;
 instance_destroy();
 </string>
           </argument>
