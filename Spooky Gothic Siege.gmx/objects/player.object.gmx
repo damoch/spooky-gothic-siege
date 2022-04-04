@@ -73,7 +73,7 @@ p_hitpoints = 25;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(p_can_shoot &amp;&amp; mouse_check_button(mb_left)){
+            <string>if(p_can_shoot &amp;&amp; mouse_check_button(mb_left) &amp;&amp; !controller.game_over){
     p_can_shoot = false;
     audio_play_sound(snd_rifle, 50, false);
     alarm[0] = p_reload_time;

@@ -8,6 +8,8 @@
     <sound>sound\snd_rifle</sound>
     <sound>sound\snd_small_rifle</sound>
     <sound>sound\snd_mg</sound>
+    <sound>sound\mus_menu</sound>
+    <sound>sound\mus_game</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cursor</sprite>
@@ -60,8 +62,10 @@
     <objects name="gfx">
       <object>objects\gfx_zombie_death</object>
     </objects>
+    <object>objects\main_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\menu</room>
     <room>rooms\game</room>
   </rooms>
   <help>
