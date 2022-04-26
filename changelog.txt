@@ -1,0 +1,5 @@
+v 0.0.2
+- Spawn area for friendlies
+
+v 0.0.1
+Jam version

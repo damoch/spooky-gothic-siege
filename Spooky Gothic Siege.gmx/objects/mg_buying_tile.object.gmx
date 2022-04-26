@@ -72,8 +72,11 @@ y = mouse_y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,creates);
-instance_destroy();
+            <string>if(place_meeting(x,y,friendly_spawner)){
+    instance_create(x,y,creates);
+    instance_destroy();
+    friendly_spawner.visible = false;
+}
 </string>
           </argument>
         </arguments>

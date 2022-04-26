@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(mus_menu, 1, true);
+            <string>draw_set_font(main)
+audio_play_sound(mus_menu, 1, true);
 </string>
           </argument>
         </arguments>

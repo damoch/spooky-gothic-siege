@@ -3,7 +3,7 @@
   <spriteName>spr_sniper</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -56,6 +56,7 @@ name = "SNIPER";
             <string>if(controller.credits &gt;= cost &amp;&amp; !controller.game_over){
     controller.credits -= cost;
     instance_create(x,y,produces);
+    friendly_spawner.visible = true;
     cost *= cost_increase;
 }
 </string>
@@ -108,6 +109,7 @@ draw_text(x,y+15,"Shorcut: F1")
             <string>if(controller.credits &gt;= cost &amp;&amp; !controller.game_over){
     controller.credits -= cost;
     instance_create(x,y,produces);
+    friendly_spawner.visible = true;
     cost *= cost_increase;
 }
 </string>
