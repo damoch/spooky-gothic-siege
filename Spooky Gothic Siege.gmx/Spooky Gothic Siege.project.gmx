@@ -66,6 +66,7 @@
     </objects>
     <objects name="gfx">
       <object>objects\gfx_zombie_death</object>
+      <object>objects\obj_first_particle</object>
     </objects>
     <object>objects\main_menu</object>
   </objects>
