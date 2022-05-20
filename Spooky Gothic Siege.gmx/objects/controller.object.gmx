@@ -28,7 +28,7 @@
             <string>audio_stop_all();
 audio_play_sound(mus_game,1,true);
 total_kills = 0;
-credits = 0;
+credits = 500;
 
 game_over = false;
 </string>

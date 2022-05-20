@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>z_speed = 1.25;
-z_pinned_down_speed = z_speed * 0.5;
+            <string>z_speed = random_range(0.5, 1.25);
+z_pinned_down_speed = z_speed * 0.4;
 z_current_speed = z_speed;
 z_pinned_down_time = 3 * room_speed;
 z_health = 25;

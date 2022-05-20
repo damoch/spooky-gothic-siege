@@ -26,10 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>z_tier = 0;
-z_spawning_time = 1.5 * room_speed;
+z_spawning_time = 7 * room_speed;
 z_direction = "RIGHT";
 z_min_land_height = 256;
 z_max_land_height = room_height;
+z_zombies_to_spawn = 2;
+z_zobies_increment = 2;
 
 
 z_tier_zero_enemy_list[0] = zombie;
@@ -61,7 +63,11 @@ z_total_spawned = 0;
           <argument>
             <kind>1</kind>
             <string>z_enemy = irandom(array_height_2d(z_enemy_list[z_tier])-1)
-instance_create(x, random_range(z_min_land_height, z_max_land_height), zombie)
+
+for(var i = 0; i &lt; z_zombies_to_spawn; i++){
+    instance_create(x, random_range(z_min_land_height, z_max_land_height), zombie)
+}
+z_zombies_to_spawn += z_zobies_increment;
 z_total_spawned++;
 if(z_total_spawned % 10==0 &amp;&amp; z_total_spawned &gt;= 15){
     z_spawning_time*=0.95;
