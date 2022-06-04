@@ -31,7 +31,7 @@ z_direction = "RIGHT";
 z_min_land_height = 256;
 z_max_land_height = room_height;
 z_zombies_to_spawn = 2;
-z_zobies_increment = 2;
+z_zobies_increment = 1;
 
 
 z_tier_zero_enemy_list[0] = zombie;
