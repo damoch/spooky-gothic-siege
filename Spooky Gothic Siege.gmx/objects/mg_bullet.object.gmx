@@ -135,6 +135,11 @@ if(point_distance(x, p_target_x, y, p_target_y) &lt;= p_speed){
             <string>p_target_id = -1;
 other.z_health-=p_hitpoints;
 other.alarm[0] = 1;
+
+obj_first_particle.x = x;
+obj_first_particle.y = y;
+obj_first_particle.alarm[1] = 1;
+
 instance_destroy();
 </string>
           </argument>
@@ -162,6 +167,11 @@ instance_destroy();
 other.z_health-=p_hitpoints;
 other.alarm[0] = 1;
 other.alarm[1] = 1;
+
+obj_first_particle.x = x;
+obj_first_particle.y = y;
+obj_first_particle.alarm[1] = 1;
+
 instance_destroy();
 </string>
           </argument>

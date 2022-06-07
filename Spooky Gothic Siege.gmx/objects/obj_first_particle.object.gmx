@@ -36,13 +36,43 @@ part_type_size(first_particle,0.10,0.15,-.001,0);
 part_type_color2(first_particle,c_red,c_red);
 part_type_alpha2(first_particle,1,0.75);
 part_type_speed(first_particle,0.5,1,0.1,0);
-part_type_gravity(first_particle,0.1,270);
-part_type_life(first_particle,5,25);
+part_type_gravity(first_particle,0.3,270);
+part_type_life(first_particle,1,15);
 part_type_blend(first_particle,true);
 
 first_emitter = part_emitter_create(FirstParticleSystem);
 part_emitter_region(FirstParticleSystem, first_emitter, x-20, x+20, y-20, y+20, ps_shape_ellipse, ps_distr_gaussian);
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>part_emitter_region(FirstParticleSystem,first_emitter,x,x,y,y,0,0);
+ 
+if x != old_x || old_y != y
+{
+    part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,irandom(55));
+}
+old_x = x;
+old_y = y;
 </string>
           </argument>
         </arguments>
