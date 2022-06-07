@@ -36,10 +36,11 @@ z_zobies_increment = 1;
 
 z_tier_zero_enemy_list[0] = zombie;
 z_enemy_list[0] = z_tier_zero_enemy_list;
-z_necromancers_to_spawn_max = 3;
+z_necromancers_to_spawn = 1;
 
 alarm[0] = z_spawning_time;
 z_total_spawned = 0;
+z_wave = 0;
 </string>
           </argument>
         </arguments>
@@ -62,7 +63,8 @@ z_total_spawned = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>z_enemy = irandom(array_height_2d(z_enemy_list[z_tier])-1)
+            <string>z_wave++;
+z_enemy = irandom(array_height_2d(z_enemy_list[z_tier])-1)
 
 for(var i = 0; i &lt; z_zombies_to_spawn; i++){
     instance_create(x, random_range(z_min_land_height, z_max_land_height), zombie)
@@ -76,11 +78,13 @@ if(z_spawning_time &lt; 1){
     z_spawning_time = 1;
 }
 
-if(z_total_spawned % 30==0 ){
-    var to_spawn = irandom(z_necromancers_to_spawn_max);
+if(z_wave == 10 ){
+    var to_spawn = z_necromancers_to_spawn;
     for(var i = 0; i &lt; to_spawn; i++){
         instance_create(x, random_range(z_min_land_height, z_max_land_height), necromancer);
     }
+    z_wave = 0;
+    z_necromancers_to_spawn++;
 }
 alarm[0] = z_spawning_time;
 
