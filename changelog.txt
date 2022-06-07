@@ -1,5 +1,9 @@
 v 0.0.2
 - Spawn area for friendlies
+- Particle effects on bullet/player hit
+- Fullscreen mode
+- Rebalance of gameplay - wave system for enemy spawns, erased randomness from necromancer spawns
+- Bugfixes
 
 v 0.0.1
 Jam version
