@@ -80,7 +80,7 @@ game_over = false;
             <kind>1</kind>
             <string>draw_text(0,0,"Total kills: " + string(total_kills));
 draw_text(0,15,"Cash: $" + string(credits));
-
+draw_text(room_width - 300,0,"Press F12 to toggle fullscreen");
 
 if(game_over){
     draw_text(room_width/2,room_height/2,"The inavetable has came, death is here");

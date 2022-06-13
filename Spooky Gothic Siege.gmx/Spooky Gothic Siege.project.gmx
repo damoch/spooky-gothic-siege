@@ -72,8 +72,8 @@
     <object>objects\main_menu</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\game</room>
     <room>rooms\menu</room>
+    <room>rooms\game</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

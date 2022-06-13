@@ -83,7 +83,7 @@ name = "SNIPER";
             <kind>1</kind>
             <string>draw_self();
 draw_text(x,y,name + " :$"+string(cost))
-draw_text(x,y+15,"Shorcut: F1")
+draw_text(x,y+15,"Shortcut: F1")
 </string>
           </argument>
         </arguments>
