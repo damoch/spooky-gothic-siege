@@ -55,6 +55,7 @@
       <object>objects\mg_bullet</object>
     </objects>
     <object>objects\controller</object>
+    <object>objects\demo_controller</object>
     <objects name="gui">
       <objects name="buttons">
         <object>objects\btn_buy_sniper</object>
@@ -72,8 +73,9 @@
     <object>objects\main_menu</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\menu</room>
     <room>rooms\game</room>
+    <room>rooms\demo</room>
+    <room>rooms\menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
