@@ -76,6 +76,7 @@ y = mouse_y
     instance_create(x,y,creates);
     instance_destroy();
     friendly_spawner.visible = false;
+    player.alarm[1] = 2;
 }
 </string>
           </argument>

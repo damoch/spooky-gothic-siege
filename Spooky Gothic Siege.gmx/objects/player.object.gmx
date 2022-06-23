@@ -28,6 +28,30 @@
             <string>p_can_shoot = true;
 p_reload_time = room_speed;
 p_hitpoints = 25;
+p_is_buying = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>p_is_buying = false;
 </string>
           </argument>
         </arguments>
@@ -73,7 +97,7 @@ p_hitpoints = 25;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(p_can_shoot &amp;&amp; mouse_check_button(mb_left) &amp;&amp; !controller.game_over){
+            <string>if(p_can_shoot &amp;&amp; mouse_check_button(mb_left) &amp;&amp; !controller.game_over &amp;&amp; !p_is_buying){
     p_can_shoot = false;
     audio_play_sound(snd_rifle, 50, false);
     alarm[0] = p_reload_time;
