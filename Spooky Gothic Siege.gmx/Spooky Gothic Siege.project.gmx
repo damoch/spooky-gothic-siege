@@ -19,6 +19,7 @@
       <sprite>sprites\spr_zombie</sprite>
       <sprite>sprites\tmp_bullet</sprite>
       <sprite>sprites\spawn_box</sprite>
+      <sprite>sprites\spr_checkbox</sprite>
     </sprites>
     <sprite>sprites\spr_base1</sprite>
     <sprite>sprites\spr_zombie_walk</sprite>
@@ -60,6 +61,7 @@
       <objects name="buttons">
         <object>objects\btn_buy_sniper</object>
         <object>objects\brn_buy_mg</object>
+        <object>objects\btn_checkbox_music</object>
       </objects>
       <objects name="buying_tiles">
         <object>objects\sniper_buying_tile</object>
@@ -71,11 +73,12 @@
       <object>objects\obj_first_particle</object>
     </objects>
     <object>objects\main_menu</object>
+    <object>objects\settings</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\menu</room>
     <room>rooms\game</room>
     <room>rooms\demo</room>
-    <room>rooms\menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

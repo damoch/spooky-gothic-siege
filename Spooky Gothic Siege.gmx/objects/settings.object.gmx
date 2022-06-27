@@ -25,67 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(settings.play_music){
-    audio_play_sound(mus_menu, 1, true);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>game_end();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_text(x,y,"KSZAKU &amp; RAINDANCE PRESENTS:")
-draw_text(x,y+15,"SPOOKY GOTHIC SIEGE v" + string(GM_version))
-draw_text(x,y+50,"Press ENTER to start")
-draw_text(x,y+65,"Press ESCAPE to quit")
+            <string>ini_open("settings.ini");
+play_music = ini_read_real("audio", "play_music", 1);
 
-draw_text(x,y+95,"Check credits.txt for credits for sound effects and music")
-draw_text(x,y+110,"Check changelog.txt for latest changes")
+
+ini_close(); 
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="13">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -102,8 +52,13 @@ draw_text(x,y+110,"Check changelog.txt for latest changes")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all()
-room_goto(game)
+            <string>//save settings
+
+ini_open("settings.ini");
+//audio
+ini_write_real("audio", "play_music", play_music);
+
+ini_close()
 </string>
           </argument>
         </arguments>
