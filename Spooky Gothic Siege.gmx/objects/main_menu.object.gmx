@@ -28,6 +28,7 @@
             <string>if(settings.play_music){
     audio_play_sound(mus_menu, 1, true);
 }
+window_set_fullscreen(settings.fullscreen);
 </string>
           </argument>
         </arguments>

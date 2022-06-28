@@ -62,6 +62,7 @@
         <object>objects\btn_buy_sniper</object>
         <object>objects\brn_buy_mg</object>
         <object>objects\btn_checkbox_music</object>
+        <object>objects\btn_checkbox_fullscreen</object>
       </objects>
       <objects name="buying_tiles">
         <object>objects\sniper_buying_tile</object>

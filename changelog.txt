@@ -1,7 +1,9 @@
-v 0.0.3
+v 0.3
 - fixed bug that allowed to buy multiple defenders at once
 - defenders now only shoot where they are facing
 - fixed bug where player could shoot while placing a defender
+- new options system
+- ability to disable ingame music
 
 v 0.0.2
 - Spawn area for friendlies

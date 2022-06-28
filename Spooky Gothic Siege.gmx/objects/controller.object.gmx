@@ -112,22 +112,16 @@ if(game_over){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-    if (window_get_fullscreen())
-    {
-        window_set_fullscreen(false);
-    }
-    else
-    {
-        window_set_fullscreen(true);
-    }
-
+            <string>settings.fullscreen = !settings.fullscreen;
+image_index = settings.fullscreen;
+window_set_fullscreen(settings.fullscreen);
+settings.alarm[0] = 1;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="27">
+    <event eventtype="10" enumb="27">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -144,7 +138,7 @@ if(game_over){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_end();
+            <string>room_goto(menu);
 </string>
           </argument>
         </arguments>
