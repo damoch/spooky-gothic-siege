@@ -5,6 +5,8 @@ v 0.3
 - new options system
 - ability to disable ingame music
 - necromancer death animation
+- bounties for kills are more clearly visible
+- money values are now rounded to intigers
 
 v 0.0.2
 - Spawn area for friendlies

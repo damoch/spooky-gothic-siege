@@ -58,7 +58,7 @@ name = "SNIPER";
     controller.credits -= cost;
     instance_create(x,y,produces);
     friendly_spawner.visible = true;
-    cost *= cost_increase;
+    cost = round(cost * cost_increase);
 }
 </string>
           </argument>
@@ -112,7 +112,7 @@ draw_text(x,y+15,"Shortcut: F1")
     controller.credits -= cost;
     instance_create(x,y,produces);
     friendly_spawner.visible = true;
-    cost *= cost_increase;
+    cost = round(cost * cost_increase);
 }
 </string>
           </argument>

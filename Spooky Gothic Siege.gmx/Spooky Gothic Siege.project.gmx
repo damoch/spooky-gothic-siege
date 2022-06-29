@@ -79,8 +79,8 @@
     <object>objects\settings</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\menu</room>
     <room>rooms\game</room>
+    <room>rooms\menu</room>
     <room>rooms\demo</room>
   </rooms>
   <help>
