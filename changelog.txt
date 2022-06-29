@@ -4,6 +4,7 @@ v 0.3
 - fixed bug where player could shoot while placing a defender
 - new options system
 - ability to disable ingame music
+- necromancer death animation
 
 v 0.0.2
 - Spawn area for friendlies
