@@ -30,6 +30,7 @@ total_kills = 0;
 credits = 500;
 
 game_over = false;
+controller.credits = 99999;
 </string>
           </argument>
         </arguments>
