@@ -74,7 +74,8 @@ window_set_fullscreen(settings.fullscreen);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x,y,"KSZAKU &amp; RAINDANCE PRESENTS:")
+            <string>draw_set_font(main)
+draw_text(x,y,"KSZAKU &amp; RAINDANCE PRESENTS:")
 draw_text(x,y+15,"SPOOKY GOTHIC SIEGE v" + string(GM_version))
 draw_text(x,y+50,"Press ENTER to start")
 draw_text(x,y+65,"Press ESCAPE to quit")

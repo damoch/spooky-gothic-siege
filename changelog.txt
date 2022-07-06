@@ -9,6 +9,7 @@ v 0.3
 - bounties for kills are more clearly visible
 - money values are now rounded to intigers
 - fixed machine gunner bullet spawn point
+- new font
 
 v 0.0.2
 - Spawn area for friendlies

@@ -83,8 +83,8 @@ name = "MACHINE GUN NEST";
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(x,y,name + " :$"+string(cost))
-draw_text(x,y+15,"Shortcut: F2")
+draw_text(x+40,y-15,name + " :$"+string(cost))
+draw_text(x+40,y,"Shortcut: F2")
 </string>
           </argument>
         </arguments>
