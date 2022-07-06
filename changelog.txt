@@ -4,6 +4,7 @@ v 0.3
 - fixed bug where player could shoot while placing a defender
 - new options system
 - ability to disable ingame music
+- options buttons
 - necromancer death animation
 - bounties for kills are more clearly visible
 - money values are now rounded to intigers

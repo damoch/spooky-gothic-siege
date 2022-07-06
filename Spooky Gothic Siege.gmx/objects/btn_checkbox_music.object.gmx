@@ -28,6 +28,53 @@
             <string>image_speed = 0;
 
 image_index = settings.play_music;
+draw_box = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_box = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_box = true;
 </string>
           </argument>
         </arguments>
@@ -81,7 +128,10 @@ settings.alarm[0] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>if(draw_box){
+    draw_rectangle(x-32, y-32, x+32, y+32, true);
+}
+draw_self();
 draw_text(x-32, y+45, "Play music");
 </string>
           </argument>

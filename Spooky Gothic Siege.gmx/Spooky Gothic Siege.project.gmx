@@ -19,7 +19,7 @@
       <sprite>sprites\spr_zombie</sprite>
       <sprite>sprites\tmp_bullet</sprite>
       <sprite>sprites\spawn_box</sprite>
-      <sprite>sprites\spr_checkbox</sprite>
+      <sprite>sprites\spr_checkbox_tmp</sprite>
     </sprites>
     <sprite>sprites\spr_base1</sprite>
     <sprite>sprites\spr_zombie_walk</sprite>
@@ -28,6 +28,7 @@
     <sprite>sprites\spr_sniper</sprite>
     <sprite>sprites\spr_mg_nest</sprite>
     <sprite>sprites\spr_zombie_death</sprite>
+    <sprite>sprites\spr_checkbox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -80,10 +81,10 @@
     <object>objects\debug</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\menu</room>
     <room>rooms\test_room</room>
     <room>rooms\demo</room>
     <room>rooms\game</room>
-    <room>rooms\menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
