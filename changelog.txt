@@ -10,6 +10,8 @@ v 0.3
 - money values are now rounded to intigers
 - fixed machine gunner bullet spawn point
 - new font
+- title change
+- main menu redesign
 
 v 0.0.2
 - Spawn area for friendlies

@@ -75,13 +75,16 @@ window_set_fullscreen(settings.fullscreen);
           <argument>
             <kind>1</kind>
             <string>draw_set_font(main)
-draw_text(x,y,"KSZAKU &amp; RAINDANCE PRESENTS:")
-draw_text(x,y+15,"SPOOKY GOTHIC SIEGE v" + string(GM_version))
-draw_text(x,y+50,"Press ENTER to start")
-draw_text(x,y+65,"Press ESCAPE to quit")
+draw_text(0,0,"Check credits.txt for credits for sound effects and music")
+draw_text(0,15,"Check changelog.txt for latest changes")
 
-draw_text(x,y+95,"Check credits.txt for credits for sound effects and music")
-draw_text(x,y+110,"Check changelog.txt for latest changes")
+draw_text(room_width/2-200,room_height/2 - 15,"KSZAKU &amp; RAINDANCE PRESENT:")
+draw_text(room_width/2-200,room_height/2,"REVENGE OF THE NECROMANCERS v" + string(GM_version))
+
+
+draw_text(0,room_height -50,"Press ENTER to start")
+draw_text(0,room_height -35,"Press ESCAPE to quit")
+
 </string>
           </argument>
         </arguments>
