@@ -59,13 +59,11 @@ if(base.x &lt; x){
             <kind>1</kind>
             <string>tmp_enemy = instance_nearest(x,y,necromancer)
 
-if(!tmp_enemy){
+if(!tmp_enemy || !((d_facing_left &amp;&amp; tmp_enemy.x &lt;= x) || (!d_facing_left &amp;&amp; tmp_enemy.x &gt; x))){
     tmp_enemy = instance_nearest(x,y,zombie)
 }
 if(tmp_enemy &amp;&amp; ((d_facing_left &amp;&amp; tmp_enemy.x &lt;= x) || (!d_facing_left &amp;&amp; tmp_enemy.x &gt; x))){
 
-
-    //image_angle = point_direction(x, tmp_enemy.x,y,tmp_enemy.y) - 90
     projectile = instance_create(x,y,d_projectile);
     projectile.p_target_x = tmp_enemy.x;
     projectile.p_target_y = tmp_enemy.y;

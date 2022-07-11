@@ -58,7 +58,7 @@ name = "MACHINE GUN NEST";
     controller.credits -= cost;
     instance_create(x,y,produces)
     friendly_spawner.visible = true;
-    cost *= cost_increase;
+    cost = round(cost * cost_increase);
 }
 </string>
           </argument>
@@ -108,10 +108,11 @@ draw_text(x+40,y,"Shortcut: F2")
           <argument>
             <kind>1</kind>
             <string>if(controller.credits &gt;= cost &amp;&amp; !controller.game_over){
+    player.p_is_buying = true;
     controller.credits -= cost;
     instance_create(x,y,produces)
     friendly_spawner.visible = true;
-    cost *= cost_increase;
+    cost = round(cost * cost_increase);
 }
 </string>
           </argument>

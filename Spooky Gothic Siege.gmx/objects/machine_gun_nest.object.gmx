@@ -60,7 +60,7 @@ if(base.x &lt; x){
             <kind>1</kind>
             <string>tmp_enemy = instance_nearest(x,y,necromancer)
 
-if(!tmp_enemy){
+if(!tmp_enemy|| !((d_facing_left &amp;&amp; tmp_enemy.x &lt;= x) || (!d_facing_left &amp;&amp; tmp_enemy.x &gt; x))){
     tmp_enemy = instance_nearest(x,y,zombie)
 }
 if(tmp_enemy &amp;&amp; ((d_facing_left &amp;&amp; tmp_enemy.x &lt;= x) || (!d_facing_left &amp;&amp; tmp_enemy.x &gt; x))){
