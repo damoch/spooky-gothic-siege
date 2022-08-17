@@ -31,9 +31,41 @@ if(settings.play_music){
 
 }
 total_kills = 0;
+ini_open("hiscore.ini");
+top_kills_read_value = ini_read_real("score", "top_kills", 0);
+ini_close();
 credits = 500;
-
+top_kills = top_kills_read_value;
 game_over = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//save hiscore
+if(top_kills_read_value &lt; total_kills){
+    ini_open("hiscore.ini");
+    ini_write_real("score", "top_kills", total_kills);
+    ini_close()
+}
+
 </string>
           </argument>
         </arguments>
@@ -82,7 +114,8 @@ game_over = false;
           <argument>
             <kind>1</kind>
             <string>draw_text(0,0,"Total kills: " + string(total_kills));
-draw_text(0,15,"Cash: $" + string(credits));
+draw_text(0,15,"Top kills: " + string(top_kills));
+draw_text(0,30,"Cash: $" + string(credits));
 draw_text(room_width - 300,0,"Press F12 to toggle fullscreen");
 
 if(game_over){

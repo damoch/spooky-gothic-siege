@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>controller.game_over = true;
+controller.alarm[0] = 1;
 </string>
           </argument>
         </arguments>
