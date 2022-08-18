@@ -83,6 +83,7 @@ name = "MACHINE GUN NEST";
           <argument>
             <kind>1</kind>
             <string>draw_self();
+draw_set_color(c_white);
 draw_text(x+40,y-15,name + " :$"+string(cost))
 draw_text(x+40,y,"Shortcut: F2")
 </string>
