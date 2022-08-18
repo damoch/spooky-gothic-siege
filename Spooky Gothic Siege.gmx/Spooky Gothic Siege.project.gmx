@@ -29,6 +29,7 @@
     <sprite>sprites\spr_mg_nest</sprite>
     <sprite>sprites\spr_zombie_death</sprite>
     <sprite>sprites\spr_checkbox</sprite>
+    <sprite>sprites\spr__nozzle_flash</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -73,6 +74,7 @@
     </objects>
     <objects name="gfx">
       <object>objects\gfx_zombie_death</object>
+      <object>objects\muzzle_flash</object>
       <object>objects\gfx_necromancer_death</object>
       <object>objects\obj_first_particle</object>
     </objects>

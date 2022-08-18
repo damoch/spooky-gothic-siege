@@ -35,6 +35,8 @@ if(base.x &lt; x){
     image_xscale=-1;
     d_facing_left = false;
 }
+pos_x = 0;
+m_f = 0;
 </string>
           </argument>
         </arguments>
@@ -69,6 +71,17 @@ if(tmp_enemy &amp;&amp; ((d_facing_left &amp;&amp; tmp_enemy.x &lt;= x) || (!d_f
     projectile.p_target_y = tmp_enemy.y;
     projectile.alarm[0] = 1;
     audio_play_sound(snd_small_rifle, 1,false);
+    if(d_facing_left){
+        pos_x = -26;
+    }
+    else{
+        pos_x = 26;
+    }
+    m_f = instance_create(x+pos_x,y-15,muzzle_flash);
+    
+    if(!d_facing_left){
+        m_f.image_xscale *=-1;
+    }
 }
 alarm[0] = d_firing_speed;
 </string>
