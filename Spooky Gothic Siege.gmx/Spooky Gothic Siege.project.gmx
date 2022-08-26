@@ -30,6 +30,7 @@
     <sprite>sprites\spr_zombie_death</sprite>
     <sprite>sprites\spr_checkbox</sprite>
     <sprite>sprites\spr__nozzle_flash</sprite>
+    <sprite>sprites\spr_zombie_attack</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
