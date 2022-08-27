@@ -38,6 +38,43 @@ death_animation = gfx_zombie_death;
 if(z_target.x &lt; x){
     image_xscale=-1;
 }
+
+moan_interval = 4*room_speed;
+alarm[3] = moan_interval;
+
+moan[0] = moan1;
+moan[1] = moan2;
+moan[2] = moan3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>chance = random(10)
+
+if(chance&gt;7){
+    audio_play_sound(moan[irandom(2)], 0.5,0);
+}
+
+
+alarm[3] = moan_interval;
 </string>
           </argument>
         </arguments>

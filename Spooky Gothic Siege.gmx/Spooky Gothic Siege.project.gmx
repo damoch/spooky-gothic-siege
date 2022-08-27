@@ -10,6 +10,11 @@
     <sound>sound\snd_mg</sound>
     <sound>sound\mus_menu</sound>
     <sound>sound\mus_game</sound>
+    <sounds name="zombie">
+      <sound>sound\moan1</sound>
+      <sound>sound\moan2</sound>
+      <sound>sound\moan3</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cursor</sprite>
