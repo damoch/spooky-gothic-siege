@@ -80,6 +80,7 @@
         <object>objects\sniper_buying_tile</object>
         <object>objects\mg_buying_tile</object>
       </objects>
+      <object>objects\gui_bounty_msg</object>
     </objects>
     <objects name="gfx">
       <object>objects\gfx_zombie_death</object>
