@@ -36,6 +36,7 @@
     <sprite>sprites\spr_checkbox</sprite>
     <sprite>sprites\spr__nozzle_flash</sprite>
     <sprite>sprites\spr_zombie_attack</sprite>
+    <sprite>sprites\spr_blackrect</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -72,6 +73,8 @@
         <object>objects\brn_buy_mg</object>
         <object>objects\btn_checkbox_music</object>
         <object>objects\btn_checkbox_fullscreen</object>
+        <object>objects\btn_startgame</object>
+        <object>objects\btn_exitgame</object>
       </objects>
       <objects name="buying_tiles">
         <object>objects\sniper_buying_tile</object>
