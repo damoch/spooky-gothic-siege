@@ -172,7 +172,9 @@ settings.alarm[0] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(menu);
+            <string>if(!player.p_is_buying){
+    room_goto(menu);
+}
 </string>
           </argument>
         </arguments>
