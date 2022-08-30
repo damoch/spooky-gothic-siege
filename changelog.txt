@@ -1,3 +1,12 @@
+v 0.5
+- main menu has now normal buttons
+- ability to cancel purchase of defender
+- zombie have now cool moan sound effect
+- snipers have now laser sight
+- zombie have now little attack animation
+- nozzle flashes for defenders guns
+- hi-scores
+
 v 0.3
 - fixed bug that allowed to buy multiple defenders at once
 - defenders now only shoot where they are facing
