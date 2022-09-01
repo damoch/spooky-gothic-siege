@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
+            <string>difficulty_setting = setting_normal;
+audio_stop_all();
 if(settings.play_music){
     audio_play_sound(mus_game,1,true);
 

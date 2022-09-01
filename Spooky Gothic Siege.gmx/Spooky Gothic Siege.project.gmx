@@ -91,6 +91,7 @@
     <object>objects\main_menu</object>
     <object>objects\settings</object>
     <object>objects\debug</object>
+    <object>objects\setting_normal</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>

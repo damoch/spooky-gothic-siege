@@ -25,14 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>z_speed = random_range(0.5, 1.25);
-z_pinned_down_speed = z_speed * 0.4;
+            <string>z_speed = random_range(controller.difficulty_setting.zombie_speed_min, controller.difficulty_setting.zombie_speed_max);
+z_pinned_down_speed = z_speed * controller.difficulty_setting.zombie_pinned_penalty;
 z_current_speed = z_speed;
-z_pinned_down_time = 3 * room_speed;
-z_health = 25;
+z_pinned_down_time = controller.difficulty_setting.zombie_pinned_penalty_time * room_speed;
+z_health = controller.difficulty_setting.zombie_health;
 image_speed = 0.25;
 z_target = instance_nearest(x,y,base);
-z_bounty_credits = 25;
+z_bounty_credits = controller.difficulty_setting.zombie_bounty;
 death_animation = gfx_zombie_death;
 
 if(z_target.x &lt; x){
