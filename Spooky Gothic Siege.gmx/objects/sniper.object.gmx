@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>d_firing_speed = 1.5 * room_speed;
-d_projectile = sniper_bullet;
+            <string>d_firing_speed = controller.difficulty_setting.sniper_firing_speed * room_speed;
+d_projectile = controller.difficulty_setting.sniper_projectile;
 d_facing_left = true;
 
 alarm[0] = d_firing_speed;

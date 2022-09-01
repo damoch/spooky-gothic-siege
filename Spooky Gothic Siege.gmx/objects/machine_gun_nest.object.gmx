@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>d_firing_speed = room_speed/16;
-d_projectile = mg_bullet;
-d_accuracy_mod = 70;
+            <string>d_firing_speed = room_speed/controller.difficulty_setting.mg_firing_speed_divider;
+d_projectile = controller.difficulty_setting.mg_projectile;
+d_accuracy_mod = controller.difficulty_setting.mg_accuracy_mod;
 d_facing_left = true;
 
 alarm[0] = d_firing_speed;

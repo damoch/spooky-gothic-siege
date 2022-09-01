@@ -25,15 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>z_speed = 0.75;
-z_health = 100;
+            <string>z_speed = controller.difficulty_setting.necromancer_speed;
+z_health = controller.difficulty_setting.necromancer_health;
 image_speed = 0.25;
 z_target = instance_nearest(x,y,base);
-z_bounty_credits = 200;
+z_bounty_credits = controller.difficulty_setting.necromancer_bounty;
 death_animation = gfx_necromancer_death;
-z_spawning_distance = 128;
+z_spawning_distance = controller.difficulty_setting.necromancer_spawning_distance;
 z_can_spawn = true;
-z_spawn_delay = 1 * room_speed;
+z_spawn_delay = controller.difficulty_setting.necromancer_spawn_delay * room_speed;
 
 if(z_target.x &lt; x){
     image_xscale=-1;

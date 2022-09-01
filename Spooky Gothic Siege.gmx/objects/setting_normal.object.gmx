@@ -25,13 +25,44 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//ZOMBIE RULES
+            <string>//PLAYER RULES
+player_reload_time_multipler = 1
+player_gun_hitpoints = 25
+player_start_credits = 500;
+
+//MACHINE GUN RULES
+mg_firing_speed_divider = 16;
+mg_projectile = mg_bullet;
+mg_cost = 500;
+mg_accuracy_mod = 70;
+mg_cost_increase = 1.1;
+//MG BULLET
+mg_bullet_speed = 30;
+mg_bullet_hitpoints = 0.5;
+
+//SNIPER RULES
+sniper_firing_speed = 1.5;
+sniper_projectile = sniper_bullet;
+sniper_cost = 100;
+sniper_cost_increase = 1.1;
+//SNIPER BULLET
+s_bullet_speed = 15;
+s_bullet_hitpoints = 13;
+
+//ZOMBIE RULES
 zombie_speed_min = 0.5;
 zombie_speed_max = 1.25;
 zombie_pinned_penalty = 0.4;
 zombie_pinned_penalty_time = 3;
 zombie_health = 25;
 zombie_bounty = 25;
+
+//NECROMANCER RULES
+necromancer_speed = 0.75;
+necromancer_health = 100;
+necromancer_bounty = 200;
+necromancer_spawning_distance = 128;
+necromancer_spawn_delay = 1;
 </string>
           </argument>
         </arguments>

@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>p_can_shoot = true;
-p_reload_time = room_speed;
-p_hitpoints = 25;
+p_reload_time = room_speed * controller.difficulty_setting.player_reload_time_multipler;
+p_hitpoints = controller.difficulty_setting.player_gun_hitpoints;
 p_is_buying = false;
 </string>
           </argument>

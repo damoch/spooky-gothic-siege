@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cost = 500;
-cost_increase = 1.1;
+            <string>cost = controller.difficulty_setting.mg_cost;
+cost_increase = controller.difficulty_setting.mg_cost_increase;
 produces = mg_buying_tile;
 buying_button = vk_f2;
 

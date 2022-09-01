@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>new_instance = 0;
-cost = 100;
-cost_increase = 1.1;
+cost = controller.difficulty_setting.sniper_cost;
+cost_increase = controller.difficulty_setting.sniper_cost_increase;
 produces = sniper_buying_tile;
 buying_button = vk_f1;
 

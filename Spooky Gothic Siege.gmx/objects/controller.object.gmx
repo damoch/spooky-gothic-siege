@@ -35,7 +35,7 @@ total_kills = 0;
 ini_open("hiscore.ini");
 top_kills_read_value = ini_read_real("score", "top_kills", 0);
 ini_close();
-credits = 500;
+credits = difficulty_setting.player_start_credits;
 top_kills = top_kills_read_value;
 game_over = false;
 </string>
