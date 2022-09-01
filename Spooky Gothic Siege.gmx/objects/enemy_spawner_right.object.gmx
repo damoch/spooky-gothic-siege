@@ -26,12 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>z_tier = 0;
-z_spawning_time = 7 * room_speed;
+z_spawning_time = controller.difficulty_setting.spawning_time * room_speed;
 z_direction = "RIGHT";
 z_min_land_height = 256;
 z_max_land_height = room_height;
 z_zombies_to_spawn = 2;
-z_zobies_increment = 1;
+z_zobies_increment = controller.difficulty_setting.spawning_zombies_increase;
 
 
 z_tier_zero_enemy_list[0] = zombie;
@@ -78,13 +78,13 @@ if(z_spawning_time &lt; 1){
     z_spawning_time = 1;
 }
 
-if(z_wave == 10 ){
+if(z_wave == controller.difficulty_setting.spawning_necromancer_every_nth_wave ){
     var to_spawn = z_necromancers_to_spawn;
     for(var i = 0; i &lt; to_spawn; i++){
         instance_create(x, random_range(z_min_land_height, z_max_land_height), necromancer);
     }
     z_wave = 0;
-    z_necromancers_to_spawn++;
+    z_necromancers_to_spawn+=controller.difficulty_setting.spawning_necromancer_increase;
 }
 alarm[0] = z_spawning_time;
 

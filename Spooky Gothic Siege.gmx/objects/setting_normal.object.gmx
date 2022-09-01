@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//PLAYER RULES
+            <string>//SPAWNER RULES
+spawning_time = 7;
+spawning_zombies_increase = 1;
+spawning_necromancer_every_nth_wave = 10;
+spawning_necromancer_increase = 1;
+
+//PLAYER RULES
 player_reload_time_multipler = 1
 player_gun_hitpoints = 25
 player_start_credits = 500;
