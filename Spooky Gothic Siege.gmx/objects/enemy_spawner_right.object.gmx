@@ -67,8 +67,10 @@ z_wave = 0;
 z_enemy = irandom(array_height_2d(z_enemy_list[z_tier])-1)
 
 for(var i = 0; i &lt; z_zombies_to_spawn; i++){
-    instance_create(x, random_range(z_min_land_height, z_max_land_height), zombie)
+    instance_create(x, random_range(z_min_land_height, z_max_land_height), zombie);    
+    instance_create(0, random_range(z_min_land_height, z_max_land_height), zombie);
 }
+
 z_zombies_to_spawn += z_zobies_increment;
 z_total_spawned++;
 if(z_total_spawned % 10==0 &amp;&amp; z_total_spawned &gt;= 15){
@@ -82,6 +84,7 @@ if(z_wave == controller.difficulty_setting.spawning_necromancer_every_nth_wave )
     var to_spawn = z_necromancers_to_spawn;
     for(var i = 0; i &lt; to_spawn; i++){
         instance_create(x, random_range(z_min_land_height, z_max_land_height), necromancer);
+        instance_create(0, random_range(z_min_land_height, z_max_land_height), necromancer);
     }
     z_wave = 0;
     z_necromancers_to_spawn+=controller.difficulty_setting.spawning_necromancer_increase;

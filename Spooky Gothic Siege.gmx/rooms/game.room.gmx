@@ -58,7 +58,6 @@
     <instance objName="enemy_spawner_right" x="1568" y="448" name="inst_BDF9876B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="player" x="768" y="704" name="inst_176EF44F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="btn_buy_sniper" x="128" y="32" name="inst_51FFB1C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemy_spawner_right" x="0" y="320" name="inst_4BC6EA74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="brn_buy_mg" x="128" y="96" name="inst_9D9975BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="friendly_spawner" x="800" y="480" name="inst_84BFE97C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_first_particle" x="0" y="0" name="inst_CD9CFBA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
