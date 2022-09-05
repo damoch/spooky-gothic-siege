@@ -41,6 +41,7 @@ z_necromancers_to_spawn = 1;
 alarm[0] = z_spawning_time;
 z_total_spawned = 0;
 z_wave = 0;
+z_curr_wave = 0;
 </string>
           </argument>
         </arguments>
@@ -64,6 +65,7 @@ z_wave = 0;
           <argument>
             <kind>1</kind>
             <string>z_wave++;
+z_curr_wave++;
 z_enemy = irandom(array_height_2d(z_enemy_list[z_tier])-1)
 
 for(var i = 0; i &lt; z_zombies_to_spawn; i++){
@@ -80,15 +82,30 @@ if(z_spawning_time &lt; 1){
     z_spawning_time = 1;
 }
 
-if(z_wave == controller.difficulty_setting.spawning_necromancer_every_nth_wave ){
+if(z_curr_wave == controller.difficulty_setting.spawning_bat_every_nth_wave){
+    var spawn = random_range(0,100);
+    if(spawn &gt; 50){
+        spawn = random_range(0,100);
+        if(spawn &gt; 50){
+            instance_create(x, random_range(0, z_min_land_height), bat);
+        }
+        else{
+            instance_create(0, random_range(0, z_min_land_height), bat);
+        }
+    }
+}
+
+if(z_curr_wave == controller.difficulty_setting.spawning_necromancer_every_nth_wave ){
     var to_spawn = z_necromancers_to_spawn;
     for(var i = 0; i &lt; to_spawn; i++){
         instance_create(x, random_range(z_min_land_height, z_max_land_height), necromancer);
         instance_create(0, random_range(z_min_land_height, z_max_land_height), necromancer);
     }
-    z_wave = 0;
+    z_curr_wave = 0;
     z_necromancers_to_spawn+=controller.difficulty_setting.spawning_necromancer_increase;
 }
+
+
 alarm[0] = z_spawning_time;
 
 

@@ -49,6 +49,7 @@
     <object>objects\base</object>
     <objects name="enemies">
       <object>objects\zombie</object>
+      <object>objects\bat</object>
       <object>objects\necromancer</object>
     </objects>
     <objects name="spawners">

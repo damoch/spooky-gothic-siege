@@ -30,6 +30,7 @@ spawning_time = 7;
 spawning_zombies_increase = 1;
 spawning_necromancer_every_nth_wave = 10;
 spawning_necromancer_increase = 1;
+spawning_bat_every_nth_wave = 7;
 
 //PLAYER RULES
 player_reload_time_multipler = 1
@@ -69,6 +70,12 @@ necromancer_health = 100;
 necromancer_bounty = 200;
 necromancer_spawning_distance = 128;
 necromancer_spawn_delay = 1;
+
+//BAT RULES
+bat_speed_min = 1.5;
+bat_speed_max = 2.25;
+bat_health = 25;
+bat_bounty = 50;
 </string>
           </argument>
         </arguments>

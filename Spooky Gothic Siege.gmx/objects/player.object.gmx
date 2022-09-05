@@ -102,7 +102,7 @@ p_is_buying = false;
     audio_play_sound(snd_rifle, 50, false);
     alarm[0] = p_reload_time;
     enemy = instance_position(mouse_x, mouse_y, all);
-    if(enemy &amp;&amp; (enemy.object_index == zombie || enemy.object_index == necromancer)){
+    if(enemy &amp;&amp; (enemy.object_index == zombie || enemy.object_index == necromancer || enemy.object_index == bat)){
         enemy.z_health-=p_hitpoints;
         enemy.alarm[0] = 1;
         obj_first_particle.alarm[0]=1;
