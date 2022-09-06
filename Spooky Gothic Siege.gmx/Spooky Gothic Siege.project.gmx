@@ -54,7 +54,6 @@
     </objects>
     <objects name="spawners">
       <object>objects\enemy_spawner_right</object>
-      <object>objects\enemy_spawner_left</object>
       <object>objects\friendly_spawner</object>
     </objects>
     <object>objects\player</object>
@@ -96,9 +95,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
+    <room>rooms\game</room>
     <room>rooms\test_room</room>
     <room>rooms\demo</room>
-    <room>rooms\game</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
