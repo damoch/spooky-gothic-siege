@@ -37,6 +37,7 @@
     <sprite>sprites\spr__nozzle_flash</sprite>
     <sprite>sprites\spr_zombie_attack</sprite>
     <sprite>sprites\spr_blackrect</sprite>
+    <sprite>sprites\spr_bat</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
