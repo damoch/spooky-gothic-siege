@@ -32,6 +32,14 @@ show_price = true;
 alarm[2] = show_price_time;
 bounty = instance_create(x,y,gui_bounty_msg);
 bounty.bounty = 25;
+
+gib_snd = gib1;
+
+if(random(100) &gt; 50){
+  gib_snd = gib2;  
+}
+audio_sound_pitch(gib_snd, random_range(0.8,1.2));
+audio_play_sound(gib1, 1,0);
 </string>
           </argument>
         </arguments>

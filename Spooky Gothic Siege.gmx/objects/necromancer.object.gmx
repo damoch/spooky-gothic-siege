@@ -118,6 +118,8 @@ z = instance_nearest(x,y,gfx_zombie_death);
 
 
 if(z_can_spawn &amp;&amp; z &amp;&amp; !z.respawning &amp;&amp; distance_to_object(z) &lt; z_spawning_distance){
+    audio_sound_pitch(antigib, random_range(0.9, 1.1));
+    audio_play_sound(antigib, 1, 0);
     z_can_spawn = false;
     z.alarm[0] = 1;
     alarm[1] = z_spawn_delay;

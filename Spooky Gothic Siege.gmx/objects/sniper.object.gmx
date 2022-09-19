@@ -71,6 +71,7 @@ if(tmp_enemy &amp;&amp; ((d_facing_left &amp;&amp; tmp_enemy.x &lt;= x) || (!d_f
     projectile.p_target_x = tmp_enemy.x;
     projectile.p_target_y = tmp_enemy.y;
     projectile.alarm[0] = 1;
+    audio_sound_pitch(snd_small_rifle, random_range(0.8, 1.5));
     audio_play_sound(snd_small_rifle, 1,false);
     if(d_facing_left){
         pos_x = -26;

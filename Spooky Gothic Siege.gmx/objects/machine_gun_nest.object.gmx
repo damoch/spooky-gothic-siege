@@ -72,6 +72,7 @@ if(tmp_enemy &amp;&amp; ((d_facing_left &amp;&amp; tmp_enemy.x &lt;= x) || (!d_f
     projectile.p_target_x = tmp_enemy.x + random_range(-d_accuracy_mod,d_accuracy_mod);
     projectile.p_target_y = tmp_enemy.y + random_range(-d_accuracy_mod,d_accuracy_mod);
     projectile.alarm[0] = 1;
+    audio_sound_pitch(snd_mg, random_range(0.9, 1.1));
     audio_play_sound(snd_mg, 1,false);
     if(d_facing_left){
         pos_x = -26;

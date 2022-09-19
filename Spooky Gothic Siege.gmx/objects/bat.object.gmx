@@ -41,6 +41,12 @@ if(z_target.x &lt; x){
     position_to_move = 0;
 }
 
+moan_interval = 4*room_speed;
+alarm[3] = moan_interval;
+
+moan[0] = bat1;
+moan[1] = bat2;
+moan[2] = bat3;
 </string>
           </argument>
         </arguments>
@@ -143,8 +149,8 @@ alarm[2] = z_pinned_down_time;
             <kind>1</kind>
             <string>if(z_health &lt;=0)
 {
-    inst = instance_create(x,y,death_animation);
-    inst.image_xscale = image_xscale;
+    //inst = instance_create(x,y,death_animation);
+    //inst.image_xscale = image_xscale;
     controller.total_kills += 1;
     controller.credits += z_bounty_credits;
     instance_destroy()

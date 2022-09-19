@@ -15,6 +15,16 @@
       <sound>sound\moan2</sound>
       <sound>sound\moan3</sound>
     </sounds>
+    <sounds name="bat">
+      <sound>sound\bat1</sound>
+      <sound>sound\bat2</sound>
+      <sound>sound\bat3</sound>
+    </sounds>
+    <sounds name="gibbing">
+      <sound>sound\gib1</sound>
+      <sound>sound\gib2</sound>
+      <sound>sound\antigib</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cursor</sprite>

@@ -99,6 +99,7 @@ p_is_buying = false;
             <kind>1</kind>
             <string>if(p_can_shoot &amp;&amp; mouse_check_button_pressed(mb_left) &amp;&amp; !controller.game_over &amp;&amp; !p_is_buying){
     p_can_shoot = false;
+    audio_sound_pitch(snd_rifle, random_range(0.9, 1.1));
     audio_play_sound(snd_rifle, 50, false);
     alarm[0] = p_reload_time;
     enemy = instance_position(mouse_x, mouse_y, all);
