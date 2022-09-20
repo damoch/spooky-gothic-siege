@@ -31,7 +31,7 @@ show_price_time = 2*room_speed;
 show_price = true;
 alarm[2] = show_price_time;
 bounty = instance_create(x,y,gui_bounty_msg);
-bounty.bounty = 25;
+bounty.bounty = controller.difficulty_setting.zombie_bounty;
 
 gib_snd = gib1;
 

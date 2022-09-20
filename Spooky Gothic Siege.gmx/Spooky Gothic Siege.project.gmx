@@ -33,6 +33,7 @@
       <sprite>sprites\spr_base</sprite>
       <sprite>sprites\spr_zombie</sprite>
       <sprite>sprites\tmp_bullet</sprite>
+      <sprite>sprites\spr_mg_bullet</sprite>
       <sprite>sprites\spawn_box</sprite>
       <sprite>sprites\spr_checkbox_tmp</sprite>
     </sprites>

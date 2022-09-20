@@ -72,7 +72,7 @@ alarm[0] = 3*room_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x-23, y-40, "+25$");
+            <string>draw_text(x-23, y-40, "+" + string(bounty) + "$");
 </string>
           </argument>
         </arguments>

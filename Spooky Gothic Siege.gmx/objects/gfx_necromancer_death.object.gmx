@@ -29,6 +29,9 @@
 respawning = false;
 show_price_time = 2*room_speed;
 show_price = true;
+
+bounty = instance_create(x,y,gui_bounty_msg);
+bounty.bounty = controller.difficulty_setting.necromancer_bounty;
 alarm[2] = show_price_time;
 </string>
           </argument>

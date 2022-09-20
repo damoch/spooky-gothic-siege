@@ -105,6 +105,7 @@ y = mouse_y
           <argument>
             <kind>1</kind>
             <string>draw_self();
+draw_set_colour(c_white);
 draw_text(x - 120, y - 30, "Press LMB to place, press ESC to cancel");
 </string>
           </argument>

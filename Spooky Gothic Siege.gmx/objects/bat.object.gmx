@@ -28,11 +28,10 @@
             <string>z_speed = random_range(controller.difficulty_setting.bat_speed_min, controller.difficulty_setting.bat_speed_max);
 
 z_current_speed = z_speed;
-z_pinned_down_time = controller.difficulty_setting.zombie_pinned_penalty_time * room_speed;
-z_health = controller.difficulty_setting.zombie_health;
+z_health = controller.difficulty_setting.bat_health;
 image_speed = 0.25;
 z_target = instance_nearest(x,y,base);
-z_bounty_credits = controller.difficulty_setting.zombie_bounty;
+z_bounty_credits = controller.difficulty_setting.bat_bounty;
 death_animation = gfx_zombie_death;
 position_to_move = room_width;
 
@@ -149,8 +148,8 @@ alarm[2] = z_pinned_down_time;
             <kind>1</kind>
             <string>if(z_health &lt;=0)
 {
-    //inst = instance_create(x,y,death_animation);
-    //inst.image_xscale = image_xscale;
+    inst = instance_create(x,y + 25,gui_bounty_msg);
+    inst.bounty = z_bounty_credits;
     controller.total_kills += 1;
     controller.credits += z_bounty_credits;
     instance_destroy()
