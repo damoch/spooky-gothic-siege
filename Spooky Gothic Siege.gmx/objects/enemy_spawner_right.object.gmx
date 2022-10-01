@@ -107,7 +107,7 @@ if(z_curr_wave == controller.difficulty_setting.spawning_necromancer_every_nth_w
 
 //spawning bat
 var batspawn = random_range(0,100);
-if(batspawn&gt;50){
+if(z_wave&gt;5){
     var batdir = random_range(0,100);
     if(batdir &gt; 50)
     {

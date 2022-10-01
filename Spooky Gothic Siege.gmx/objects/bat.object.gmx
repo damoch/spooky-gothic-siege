@@ -46,6 +46,9 @@ alarm[3] = moan_interval;
 moan[0] = bat1;
 moan[1] = bat2;
 moan[2] = bat3;
+
+grenade_dropped = false;
+drop_x =random_range(controller.difficulty_setting.bat_grenade_drop_coord_low_x,controller.difficulty_setting.bat_grenade_drop_coord_high_x);
 </string>
           </argument>
         </arguments>
@@ -148,6 +151,7 @@ alarm[2] = z_pinned_down_time;
             <kind>1</kind>
             <string>if(z_health &lt;=0)
 {
+    instance_create(x,y,grenade);
     inst = instance_create(x,y + 25,gui_bounty_msg);
     inst.bounty = z_bounty_credits;
     controller.total_kills += 1;
@@ -177,6 +181,11 @@ alarm[2] = z_pinned_down_time;
           <argument>
             <kind>1</kind>
             <string>move_towards_point(position_to_move, y, z_current_speed);
+
+if(distance_to_point(drop_x, y) &lt;= z_current_speed &amp;&amp; !grenade_dropped){
+    grenade_dropped = true;
+    instance_create(x,y,grenade);
+}
 
 if(x &gt; room_width || x &lt; 0){
     instance_destroy();

@@ -49,6 +49,7 @@
     <sprite>sprites\spr_zombie_attack</sprite>
     <sprite>sprites\spr_blackrect</sprite>
     <sprite>sprites\spr_bat</sprite>
+    <sprite>sprites\spr_grenade</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -76,6 +77,7 @@
     <objects name="projectiles">
       <object>objects\sniper_bullet</object>
       <object>objects\mg_bullet</object>
+      <object>objects\grenade</object>
     </objects>
     <object>objects\controller</object>
     <object>objects\demo_controller</object>
