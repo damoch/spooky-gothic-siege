@@ -26,7 +26,31 @@
           <argument>
             <kind>1</kind>
             <string>g_speed = controller.difficulty_setting.grenade_fall_speed;
-g_point_of_inpact = random_range(controller.difficulty_setting.grenade_explosion_point_y_high,controller.difficulty_setting.grenade_explosion_point_y_low); 
+alarm[0] = random_range(controller.difficulty_setting.grenade_explosion_timer_low,controller.difficulty_setting.grenade_explosion_timer_high); 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(x,y,gfx_boom);
+instance_destroy();
 </string>
           </argument>
         </arguments>
