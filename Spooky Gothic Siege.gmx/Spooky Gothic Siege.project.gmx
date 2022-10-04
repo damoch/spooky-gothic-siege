@@ -52,6 +52,7 @@
     <sprite>sprites\spr_bat</sprite>
     <sprite>sprites\spr_grenade</sprite>
     <sprite>sprites\spr_explosion</sprite>
+    <sprite>sprites\spr_boom_radius</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -104,6 +105,7 @@
       <object>objects\gfx_necromancer_death</object>
       <object>objects\obj_first_particle</object>
       <object>objects\gfx_boom</object>
+      <object>objects\gfx_boom_radius</object>
     </objects>
     <object>objects\main_menu</object>
     <object>objects\settings</object>

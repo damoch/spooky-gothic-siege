@@ -83,6 +83,9 @@ bat_grenade_drop_coord_high_x = 1120;
 grenade_explosion_timer_low = 2 * room_speed;
 grenade_explosion_timer_high = 4 * room_speed;
 grenade_fall_speed = 5;
+
+//GRENADE BLAST RULES
+grenade_blast_duration = 2;
 </string>
           </argument>
         </arguments>

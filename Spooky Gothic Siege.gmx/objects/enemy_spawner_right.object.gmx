@@ -82,7 +82,7 @@ if(z_spawning_time &lt; 1){
     z_spawning_time = 1;
 }
 
-if(z_curr_wave == controller.difficulty_setting.spawning_bat_every_nth_wave){
+if(z_wave &gt; 5){
     var spawn = random_range(0,100);
     if(spawn &gt; 50){
         spawn = random_range(0,100);
@@ -106,8 +106,7 @@ if(z_curr_wave == controller.difficulty_setting.spawning_necromancer_every_nth_w
 }
 
 //spawning bat
-var batspawn = random_range(0,100);
-if(z_wave&gt;5){
+//if(z_wave&gt;=5){
     var batdir = random_range(0,100);
     if(batdir &gt; 50)
     {
@@ -116,7 +115,7 @@ if(z_wave&gt;5){
     else{
         instance_create(room_width + 50, random_range(0,160), bat)
     }
-}
+//}
 
 alarm[0] = z_spawning_time;
 

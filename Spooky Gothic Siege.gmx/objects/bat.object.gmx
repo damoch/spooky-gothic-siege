@@ -151,7 +151,10 @@ alarm[2] = z_pinned_down_time;
             <kind>1</kind>
             <string>if(z_health &lt;=0)
 {
-    instance_create(x,y,grenade);
+    if(!grenade_dropped)
+    {
+        instance_create(x,y,grenade);
+    }
     inst = instance_create(x,y + 25,gui_bounty_msg);
     inst.bounty = z_bounty_credits;
     controller.total_kills += 1;
