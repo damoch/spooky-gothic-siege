@@ -86,6 +86,7 @@ grenade_fall_speed = 5;
 
 //GRENADE BLAST RULES
 grenade_blast_duration = 2;
+grenade_blast_size = 0.7;
 </string>
           </argument>
         </arguments>

@@ -3,7 +3,7 @@
   <spriteName>spr_boom_radius</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-300</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = controller.difficulty_setting.grenade_blast_duration;
+            <string>image_xscale *= controller.difficulty_setting.grenade_blast_size;
+image_yscale *= controller.difficulty_setting.grenade_blast_size;
+
+alarm[0] = controller.difficulty_setting.grenade_blast_duration;
 </string>
           </argument>
         </arguments>
