@@ -147,6 +147,8 @@ alarm[2] = z_pinned_down_time;
             <kind>1</kind>
             <string>if(z_health &lt;=0)
 {
+    bounty = instance_create(x,y,gui_bounty_msg);
+    bounty.bounty = controller.difficulty_setting.zombie_bounty;
     inst = instance_create(x,y,death_animation);
     inst.image_xscale = image_xscale;
     controller.total_kills += 1;
