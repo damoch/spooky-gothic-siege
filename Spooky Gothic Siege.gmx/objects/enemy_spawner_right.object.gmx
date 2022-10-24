@@ -110,10 +110,10 @@ if(z_curr_wave == controller.difficulty_setting.spawning_necromancer_every_nth_w
     var batdir = random_range(0,100);
     if(batdir &gt; 50)
     {
-        instance_create(-50, random_range(0,160), bat)
+        instance_create(-50, random_range(32,160), bat)
     }
     else{
-        instance_create(room_width + 50, random_range(0,160), bat)
+        instance_create(room_width + 50, random_range(32,160), bat)
     }
 //}
 
