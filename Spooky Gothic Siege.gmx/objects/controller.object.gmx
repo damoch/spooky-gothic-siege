@@ -28,7 +28,7 @@
             <string>if(room == game){
     difficulty_setting = setting_normal;
 }
-else if (room == game_extreme){
+else{
     difficulty_setting = setting_extreme;
 }
 audio_stop_all();

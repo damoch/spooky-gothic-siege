@@ -26,14 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>//SPAWNER RULES
-spawning_time = 7;
-spawning_zombies_increase = 1;
-spawning_necromancer_every_nth_wave = 10;
-spawning_necromancer_increase = 1;
-spawning_bat_every_nth_wave = 7;
+spawning_time = 5;
+spawning_zombies_increase = 3;
+spawning_necromancer_every_nth_wave = 7;
+spawning_necromancer_increase = 2;
+spawning_bat_every_nth_wave = 3;
 
 //PLAYER RULES
-player_reload_time_multipler = 1
+player_reload_time_multipler = 0.5
 player_gun_hitpoints = 25
 player_start_credits = 500;
 
@@ -45,7 +45,7 @@ mg_accuracy_mod = 70;
 mg_cost_increase = 1.1;
 //MG BULLET
 mg_bullet_speed = 30;
-mg_bullet_hitpoints = 0.5;
+mg_bullet_hitpoints = 1;
 
 //SNIPER RULES
 sniper_firing_speed = 1.5;
@@ -54,14 +54,14 @@ sniper_cost = 100;
 sniper_cost_increase = 1.1;
 //SNIPER BULLET
 s_bullet_speed = 15;
-s_bullet_hitpoints = 13;
+s_bullet_hitpoints = 20;
 
 //ZOMBIE RULES
-zombie_speed_min = 0.5;
-zombie_speed_max = 1.25;
-zombie_pinned_penalty = 0.4;
+zombie_speed_min = 1;
+zombie_speed_max = 2;
+zombie_pinned_penalty = 0.6;
 zombie_pinned_penalty_time = 3;
-zombie_health = 25;
+zombie_health = 15;
 zombie_bounty = 25;
 
 //NECROMANCER RULES
@@ -69,7 +69,7 @@ necromancer_speed = 0.75;
 necromancer_health = 100;
 necromancer_bounty = 200;
 necromancer_spawning_distance = 128;
-necromancer_spawn_delay = 1;
+necromancer_spawn_delay = 0.5;
 
 //BAT RULES
 bat_speed_min = 1.5;

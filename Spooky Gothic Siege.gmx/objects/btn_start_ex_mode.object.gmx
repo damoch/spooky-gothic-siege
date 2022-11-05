@@ -94,7 +94,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(game);
+            <string>room_goto(game_extreme);
 </string>
           </argument>
         </arguments>
