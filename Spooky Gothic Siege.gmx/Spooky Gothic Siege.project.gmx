@@ -91,6 +91,7 @@
         <object>objects\btn_checkbox_music</object>
         <object>objects\btn_checkbox_fullscreen</object>
         <object>objects\btn_startgame</object>
+        <object>objects\btn_start_ex_mode</object>
         <object>objects\btn_exitgame</object>
       </objects>
       <objects name="buying_tiles">
@@ -111,10 +112,12 @@
     <object>objects\settings</object>
     <object>objects\debug</object>
     <object>objects\setting_normal</object>
+    <object>objects\setting_extreme</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
     <room>rooms\game</room>
+    <room>rooms\game_extreme</room>
     <room>rooms\test_room</room>
     <room>rooms\demo</room>
   </rooms>
