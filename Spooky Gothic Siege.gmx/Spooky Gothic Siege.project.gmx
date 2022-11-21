@@ -49,6 +49,7 @@
     <sprite>sprites\spr__nozzle_flash</sprite>
     <sprite>sprites\spr_zombie_attack</sprite>
     <sprite>sprites\spr_blackrect</sprite>
+    <sprite>sprites\spr_redrect</sprite>
     <sprite>sprites\spr_bat</sprite>
     <sprite>sprites\spr_grenade</sprite>
     <sprite>sprites\spr_explosion</sprite>
@@ -91,7 +92,9 @@
         <object>objects\btn_checkbox_music</object>
         <object>objects\btn_checkbox_fullscreen</object>
         <object>objects\btn_startgame</object>
+        <object>objects\btn_credits</object>
         <object>objects\btn_start_ex_mode</object>
+        <object>objects\btn_back_to_menu</object>
         <object>objects\btn_exitgame</object>
       </objects>
       <objects name="buying_tiles">
@@ -99,6 +102,7 @@
         <object>objects\mg_buying_tile</object>
       </objects>
       <object>objects\gui_bounty_msg</object>
+      <object>objects\gui_credits</object>
     </objects>
     <objects name="gfx">
       <object>objects\gfx_zombie_death</object>
@@ -116,6 +120,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
+    <room>rooms\credits_screen</room>
     <room>rooms\game</room>
     <room>rooms\game_extreme</room>
     <room>rooms\test_room</room>

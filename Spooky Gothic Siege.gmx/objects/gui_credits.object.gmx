@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,40 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
-if(settings.play_music){
-    audio_play_sound(mus_menu, 1, true);
-}
-window_set_fullscreen(settings.fullscreen);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_font(main)
-draw_text(0,0,"Check changelog.txt for latest changes")
+            <string>draw_text(0,0, "REVENGE OF THE NECROMANCER was formerly known as SPOOKY GOTHIC SIEGE");
+draw_text(0,25, "And was made for Ludum Dare 50 in April 2022");
 
-draw_text(room_width/2-200,room_height/2 - 15,"KSZAKU &amp; RAINDANCE PRESENT:")
-draw_text(room_width/2-200,room_height/2,"REVENGE OF THE NECROMANCERS v" + string(GM_version))
+draw_text(0,90, "CREDITS:");
+draw_text(0,110, "CODE&amp;GAME DESIGN: damoch");
+draw_text(0,135, "GRAPHICS: RaidanceAR");
 
 
+draw_text(0,160, "ADDITIONAL ASSETS:");
+draw_text(0,180, "Pixel Explosion (12 Frames) by JROB774 https://opengameart.org/content/pixel-explosion-12-frames");
+draw_text(0,200, "Impact by Iwan 'qubodup' Gabovitch http://opengameart.org/users/qubodup ");
+draw_text(0,220, "Death flash sound from Yo Frankie! game by Blender Foundation https://opengameart.org/content/big-explosion");
+draw_text(0,240, "bat sounds By polymorpheva: https://freesound.org/s/104205/");
+draw_text(0,260, "Zombie groan by Gustavo Silveira: https://opengameart.org/content/zombie-groan");
+draw_text(0,280, "Spooky Forest music by Bendzer: https://opengameart.org/content/spooky-forest-music");
+draw_text(0,300, "Chagrin by Spring Spring: https://opengameart.org/content/chagrin");
+draw_text(0,320, "Light Machine Gun by KuraiWolf: https://opengameart.org/content/light-machine-gun");
+draw_text(0,340, "Chaingun, pistol, rifle, shotgun shots by Michel Baradari: https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots");
 </string>
           </argument>
         </arguments>

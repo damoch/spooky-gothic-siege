@@ -95,7 +95,7 @@ hover = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_end();
+            <string>room_goto(menu);
 </string>
           </argument>
         </arguments>
@@ -119,11 +119,11 @@ hover = false;
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(x+30,y,"EXIT");
+draw_text(x,y,"BACK O MENU");
 if(hover)
 {
-    draw_sprite(spr_checkbox, 1, x-30, y);
-    draw_sprite(spr_checkbox, 1, x+130, y);
+    draw_sprite(spr_checkbox, 1, x-55, y);
+    draw_sprite(spr_checkbox, 1, x+150, y);
 }
 </string>
           </argument>
